@@ -5,4 +5,4 @@ def index(request):
     return HttpResponse('Hello, you are on mens side!')
 
 def show(request, post_id):
-    return HttpResponse(f"This is a post with ID {post_id}!")
+    return render(request, 'men_hub/show.html', {'id': post_id})
