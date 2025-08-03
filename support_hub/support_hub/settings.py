@@ -31,8 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'men_hub',
-    'women_hub',
     'main',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -57,7 +55,7 @@ ROOT_URLCONF = 'support_hub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates', BASE_DIR / 'static'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
