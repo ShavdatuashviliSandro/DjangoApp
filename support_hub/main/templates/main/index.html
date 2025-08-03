@@ -4,7 +4,6 @@
 
 {% block content %}
     {% for i in range %}
-        <a href="">
         <div class="container-xl my-4 px-3 py-3 border rounded main-posts">
 
                 <strong class="mb-2">დღის შეჯამება</strong>
@@ -15,12 +14,12 @@
                     პროექტში და განისაზღვრა მომდევნო ნაბიჯებიც.
                 </p>
                 <div class="d-flex justify-content-end align-items-center gap-3">
-                    <a style="padding-right: 15px" href="#" class="text-danger small" aria-label="Like"><img width="15px"
-                                                                                                             src="{{ logo_url }}"
-                                                                                                             alt="heart-logo"></a>
-                    <a href="#" class="small text-muted">💬 12 კომენტარი</a>
+                    <a style="padding-right: 15px" href="#" class="text-danger small" aria-label="Like"><img
+                            width="15px"
+                            src="{{ logo_url }}"
+                            alt="heart-logo"></a>
+                    <a href="show/{{ id }}" class="small text-muted">💬 12 კომენტარი</a>
                 </div>
             </div>
-        </a>
     {% endfor %}
 {% endblock %}
