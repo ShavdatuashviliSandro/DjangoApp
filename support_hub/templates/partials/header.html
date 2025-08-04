@@ -9,17 +9,36 @@
                style="flex: 1; margin-left: 8px;">
     </form>
 
-    <div class="d-flex align-items-center" style="gap: 0.5rem;">
-        <a href="#" aria-label="Notifications" style="color: inherit; text-decoration: none;">
-            <img width="22px" src="https://www.iconpacks.net/icons/1/free-bell-icon-860-thumb.png"
-                 alt="notifications-logo">
-        </a>
+    <div class="d-flex align-items-center" style="gap: 0.5rem; position: relative;">
+        <div class="dropdown">
+            <a class="text-dark" href="#" role="button" id="notifDropdown" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false" aria-label="Notifications">
+                <img width="22px" src="https://www.iconpacks.net/icons/1/free-bell-icon-860-thumb.png"
+                     alt="notifications-logo">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notifDropdown" style="min-width: 250px;">
+                <h6 class="dropdown-header">შეტყობინებები</h6>
+                <a class="dropdown-item" href="#">2 ახალი კომენტარი შენს პოსტზე</a>
+                <a class="dropdown-item" href="#">თქვენი მოთხზოვნა ჯგუფში დამატებაზე დადასტურებულია</a>
+                <a class="dropdown-item" href="#">თქვენ გაქვთ 10 გამოხმაურება პოსტზე</a>
+            </div>
+        </div>
 
-        <a href="#" aria-label="Messages" style="color: inherit; text-decoration: none;">
-            <img width="24px"
-                 src="https://images.vexels.com/media/users/3/136397/isolated/preview/375e0e784a1623517b75ea61bc1db555-basic-message-icon.png?w=360"
-                 alt="messages-icon">
-        </a>
+        <div class="dropdown">
+            <a class="text-dark" href="#" role="button" id="msgDropdown" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false" aria-label="Messages">
+                <img width="24px"
+                     src="https://images.vexels.com/media/users/3/136397/isolated/preview/375e0e784a1623517b75ea61bc1db555-basic-message-icon.png?w=360"
+                     alt="messages-icon">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="msgDropdown" style="min-width: 250px;">
+                <h6 class="dropdown-header">პირადი SMS-ები</h6>
+                <a class="dropdown-item" href="#">ნინო ვანიშვილი: გამარჯობა!</a>
+                <a class="dropdown-item" href="#">გიორგი შავდათუაშვილი: როდის შევხვდებით?</a>
+                <a class="dropdown-item" href="#">ნინო ვანიშვილი: გამარჯობა!</a>
+                <a class="dropdown-item" href="#">გიორგი შავდათუაშვილი: როდის შევხვდებით?</a>
+            </div>
+        </div>
 
         <a href="#" aria-label="Profile" style="color: inherit; text-decoration: none;">
             <img width="24px"
