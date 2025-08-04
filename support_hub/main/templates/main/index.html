@@ -35,4 +35,23 @@
             </div>
         </div>
     {% endfor %}
+    <div class="container-xl text-center my-4" style="padding-top: 30px">
+        <button id="loadMoreBtn" class="btn btn-sm border" onclick="showSpinner(this)">
+            სხვა პოსტების ნახვა
+        </button>
+    </div>
+    <script>
+        function showSpinner(button) {
+            button.disabled = true;
+            button.innerHTML = `
+            <span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>
+            იტვირთება...
+        `;
+
+            setTimeout(() => {
+                button.innerHTML = 'სხვა პოსტების ნახვა';
+                button.disabled = false;
+            }, 2000);
+        }
+    </script>
 {% endblock %}
