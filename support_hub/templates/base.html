@@ -21,22 +21,41 @@
     body {
         font-family: "BPG Banner ExtraSquare", sans-serif;
     }
+
+    .section-title {
+        font-weight: bold;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem 0.25rem;
+        border-top: 1px solid #ddd;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
 </style>
 <body>
 {% include 'partials/header.html' %}
 
 <div class="container-fluid">
     <div class="row" style="padding-top: 20px">
-        <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar border">
+        <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar border"
+             style="max-height: 100vh; overflow-y: auto;">
             <ul class="nav flex-column">
-                <li class="nav-item"><a href="#" class="nav-link">მთავარი</a></li>
+                <li class="section-title">მთავარი გვერდი</li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">სხვადასხვა ქომუნითი</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">HOT პოსტები</a></li>
+                <li class="section-title">შენთვის საინტერესო</li>
                 <li class="nav-item"><a href="#" class="nav-link">სხვადასხვა ქომუნითი</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">HOT პოსტები</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">სხვადასხვა ქომუნითი</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">HOT პოსტები</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">სხვადასხვა ქომუნითი</a></li>
+                <li class="section-title">სხვა სექციები</li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">შენახული პოსტები</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">HOT პოსტები</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">HOT პოსტები</a></li>
