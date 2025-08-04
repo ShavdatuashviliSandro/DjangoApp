@@ -3,6 +3,16 @@
 {% block title %}Support Hub - მთავარი გვერდი{% endblock %}
 
 {% block content %}
+    <div class="container-xl d-flex justify-content-end align-items-center mb-3">
+        <form class="form-inline">
+            <label for="sortSelect" class="mr-2 mb-0">დახარისხება:</label>
+            <select id="sortSelect" class="form-control form-control-sm">
+                <option value="latest">უახლესი</option>
+                <option value="popular">პოპულარული</option>
+                <option value="commented">კომენტარებით</option>
+            </select>
+        </form>
+    </div>
     {% for i in range %}
         <div class="container-xl my-4 px-3 py-3 border rounded main-posts">
             <strong class="mb-2">გთხოვთ მირჩიოთ ბიზნეს გეგმის შესახებ</strong>
