@@ -4,7 +4,18 @@
 
 {% block content %}
     <div class="container">
-        <form method="POST" action="/contact/">
+        {% if errors %}
+            <strong>დაფიქსირდა შეცდომა:</strong>
+            <ul>
+                {% for field, error in errors %}
+                    {% for e in error %}
+                        <li>{{ field }} - {{ e }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form method="POST" action="{% url 'contact:create' %}">
             {% csrf_token %}
             <div class="form-group">
                 <label for="name">სახელი</label>
