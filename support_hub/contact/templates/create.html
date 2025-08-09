@@ -4,38 +4,9 @@
 
 {% block content %}
     <div class="container">
-        {% if errors %}
-            <strong>დაფიქსირდა შეცდომა:</strong>
-            <ul>
-                {% for field, error in errors %}
-                    {% for e in error %}
-                        <li>{{ field }} - {{ e }}</li>
-                    {% endfor %}
-                {% endfor %}
-            </ul>
-        {% endif %}
-
         <form method="POST" action="{% url 'contact:create' %}">
             {% csrf_token %}
-            <div class="form-group">
-                <label for="name">სახელი</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="შეიყვანეთ თქვენი სახელი"
-                       required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="შეიყვანეთ თქვენი მეილი"
-                       required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">შეტყობინება</label>
-                <textarea class="form-control" id="message" name="message" rows="5"
-                          placeholder="შეიყვანეთ შეტყობინება..."
-                          required></textarea>
-            </div>
-
+            {{ form.as_p }}
             <button type="submit" class="btn btn-dark">გაგზავნა</button>
         </form>
     </div>
